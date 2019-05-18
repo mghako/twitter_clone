@@ -15,20 +15,23 @@
         </div>
         <div class="pt-4 font-weight-bold"> {{ $user->profile->title}} </div>
         <div>{{ $user->profile->description }}</div>
-        <div><a href="#">{{ $user->profile->url ?? N/A }}</a></div>
+        <div><a href="#">{{ $user->profile->url ?? www.profile.com }}</a></div>
     </div>
    </div>
 
    <!-- photos album sec -->
    <div class="row">
-    <div class="col-4">
+    <div class="col-3">
         <img src="{{ asset('img/megumi_1.png') }}" alt="" class="w-100 pt-5 img-responsive">
     </div>
-    <div class="col-4">
+    <div class="col-3">
         <img src="{{ asset('img/megumi_2.png') }}" alt="" class="w-100 pt-5 img-responsive">
     </div>
-    <div class="col-4">
-        <img src="{{ asset('img/megumi_3.png') }}" alt="" class="w-100 pt-5 img-responsive">
+    <div class="col-3">
+        <img src="{{ asset('img/megumi_1.png') }}" alt="" class="w-100 pt-5 img-responsive">
+    </div>
+    <div class="col-3">
+        <img src="{{ asset('img/megumi_2.png') }}" alt="" class="w-100 pt-5 img-responsive">
     </div>
    </div>
 </div>
