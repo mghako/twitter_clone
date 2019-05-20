@@ -7,7 +7,7 @@
    <div class="row">
         <div class="col-6 offset-4">
             <a href="/profile/{{ $post->user->id }}">
-            <img src="/storage/{{ $post->image }}" alt="Post Image" class="w-100 py-3 image-responsive" style="max-width: 550px;">
+            <img src="/storage/{{ $post->image }}" alt="Post Image" class="w-100 py-3 image-responsive" style="max-width: 600px; max-height: 400px;">
             </a>
         </div>
     </div>
