@@ -2,11 +2,17 @@
 
 @section('content')
 <div class="container">
+    <div class="row">
+        <div class="my-5">&nbsp;</div>
+    </div>
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
+        <img src="{{ asset('img/undraw_best_place.png') }}" alt="" class="card-img-top">
+        <div class="h3 text-center">The Best place to chill! <i class="fas fa-heart"></i></div>
+        </div>
+        <div class="col-md-6">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
+                <div class="card-header">{{ __('Register Now and Find your friends') }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf

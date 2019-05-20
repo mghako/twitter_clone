@@ -18,12 +18,17 @@
                             <a href="/profile/{{ $post->user->id }}">
                                 <span class="text-dark">{{ $post->user->username }}</span>
                             </a> |
-                            <a href="#" class="">Follow</a>
+                            <a href="#" class="btn btn-info">Follow</a>
                         </p>
                     </div>
                 </div>
                 <hr>
                 <div><span class="font-weight-bold"><span class="text-dark">{{ $post->user->username }}</span></span></div>
+                <div>
+                    <div class="h3">Description</div>
+                    
+                    <p class="">{{ $post->caption }}</p>
+                </div>
             </div>
     </div>
    </div>

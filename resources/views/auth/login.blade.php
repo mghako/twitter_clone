@@ -5,8 +5,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
+                <div class="card-header text-center">{{ __('New Posts are waiting! Login now to see!') }}</div>
+                <img class="card-img-top" src="{{ asset('img/undraw_welcome.png') }}" alt="Card image cap">
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
