@@ -14,7 +14,7 @@
     <div class="row pt-2 pb-5">
         <div class="col-6 offset-4">
             <div>
-                <div><span class="font-weight-bold"><span class="text-dark">{{ $post->user->username }}</span></span></div>
+                <div><span class="font-weight-bold"><span class="text-dark">View Profile : <a href="/profile/{{ $post->user->id }}">{{ $post->user->username }}</a></span></span></div>
             </div>
         </div>
     </div>

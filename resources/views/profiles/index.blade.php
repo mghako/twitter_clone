@@ -11,9 +11,10 @@
             <div class="d-flex align-items-center pb-4">
                 <div class="h3 mr-4">{{ $user->username}}</div>
                 <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
+                <a href="{{ route('p.index')}}" class="btn btn-danger ml-2">Home</a>
             </div>
         @can('update', $user->profile)
-        <a href="/p/create">Add Post</a>
+        <a href="/p/create" class="btn btn-warning">Add Post</a>
        @endcan
         </div>
         @can('update', $user->profile)
